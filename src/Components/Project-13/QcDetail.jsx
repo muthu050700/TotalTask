@@ -1,5 +1,4 @@
 import { Table } from "reactstrap";
-import ReactHTMLTableToExcel from "react-html-table-to-excel";
 import QcSummeryTable from "./QcSummeryTable";
 import { data } from "react-router-dom";
 import ExcelJS from "exceljs";

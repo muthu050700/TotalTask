@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Table } from "reactstrap";
 import IssueTable from "./IssueTable";
-import ReactHTMLTableToExcel from "react-html-table-to-excel";
 import ExcelJS from "exceljs";
 import { saveAs } from "file-saver";
 const IssueDocument = () => {

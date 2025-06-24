@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import ReactHTMLTableToExcel from "react-html-table-to-excel";
+import { DownloadTableExcel } from "react-export-table-to-excel";
 import { Table } from "reactstrap";
 import html2canvas from "html2canvas";
 import { PDFDocument } from "pdf-lib";
@@ -147,7 +147,7 @@ const HeaderContent = () => {
   return (
     <div>
       <div className=" flex justify-end my-3 mx-2">
-        <ReactHTMLTableToExcel
+        <DownloadTableExcel
           id="test-table-xls-button"
           className="download-table-xls-button"
           table="table-to-xls"

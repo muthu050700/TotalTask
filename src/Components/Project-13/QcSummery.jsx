@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Table } from "reactstrap";
-import ReactHTMLTableToExcel from "react-html-table-to-excel";
 import QcSummeryTable from "./QcSummeryTable";
 import { sum } from "pdf-lib";
 import ExcelJS from "exceljs";
@@ -608,8 +607,7 @@ const QcSummery = () => {
       });
       sheet1.addRow([""]);
       sheet1.mergeCells(
-        `A${5 + val.tableDetails.length + 1}:V${
-          5 + val.tableDetails.length + 1
+        `A${5 + val.tableDetails.length + 1}:V${5 + val.tableDetails.length + 1
         }`
       );
       const defectHeader = sheet1.addRow([
@@ -727,13 +725,11 @@ const QcSummery = () => {
       };
       sheet1.addRow([""]);
       sheet1.mergeCells(
-        `A${9 + val.tableDetails.length + 1}:B${
-          9 + val.tableDetails.length + 1
+        `A${9 + val.tableDetails.length + 1}:B${9 + val.tableDetails.length + 1
         }`
       );
       sheet1.mergeCells(
-        `C${9 + val.tableDetails.length + 1}:V${
-          9 + val.tableDetails.length + 1
+        `C${9 + val.tableDetails.length + 1}:V${9 + val.tableDetails.length + 1
         }`
       );
 
@@ -815,13 +811,11 @@ const QcSummery = () => {
 
       sheet1.addRow([""]);
       sheet1.mergeCells(
-        `A${12 + val.tableDetails.length + val.fabricUsageData.length + 1}:B${
-          12 + val.tableDetails.length + val.fabricUsageData.length + 1
+        `A${12 + val.tableDetails.length + val.fabricUsageData.length + 1}:B${12 + val.tableDetails.length + val.fabricUsageData.length + 1
         }`
       );
       sheet1.mergeCells(
-        `C${12 + val.tableDetails.length + val.fabricUsageData.length + 1}:V${
-          12 + val.tableDetails.length + val.fabricUsageData.length + 1
+        `C${12 + val.tableDetails.length + val.fabricUsageData.length + 1}:V${12 + val.tableDetails.length + val.fabricUsageData.length + 1
         }`
       );
 
@@ -835,13 +829,11 @@ const QcSummery = () => {
         };
       });
       sheet1.mergeCells(
-        `A${13 + val.tableDetails.length + val.fabricUsageData.length + 1}:B${
-          13 + val.tableDetails.length + val.fabricUsageData.length + 1
+        `A${13 + val.tableDetails.length + val.fabricUsageData.length + 1}:B${13 + val.tableDetails.length + val.fabricUsageData.length + 1
         }`
       );
       sheet1.mergeCells(
-        `C${13 + val.tableDetails.length + val.fabricUsageData.length + 1}:V${
-          13 + val.tableDetails.length + val.fabricUsageData.length + 1
+        `C${13 + val.tableDetails.length + val.fabricUsageData.length + 1}:V${13 + val.tableDetails.length + val.fabricUsageData.length + 1
         }`
       );
       remarks.getCell(1).font = { bold: true };
