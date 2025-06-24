@@ -23,7 +23,7 @@ import BarChartHome from "./Components/Project-6/BarChartHome";
 import BarChart1 from "./Components/Project-6/BarChart1";
 import BarChart2 from "./Components/Project-6/BarChart2";
 import MainPage from "./Components/Project-7/Components/MainPage";
-import ReactStrapMain from "./Components/Project-8/reactStrapMain";
+import ReactStrapMain from "./Components/Project-8/ReactStrapMain";
 import GinDocument from "./Components/Project-9/GinDocument";
 import BarCode from "./Components/Project-10/BarCode";
 import Rake from "./Components/Project-11/Rake";
